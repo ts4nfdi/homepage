@@ -11,6 +11,11 @@ a{
     text-decoration: none;
 }
 
+.badge{
+    background-color: #455469;
+    padding: 4px;
+}
+
 .navbar{
     background-color: #455469;    
 }
@@ -33,4 +38,11 @@ a{
 .logo{
     width: 400px;
     height: 400px;    
+}
+
+.pub-item{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
