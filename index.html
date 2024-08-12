@@ -9,15 +9,11 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
 
     <nav class="navbar navbar-expand-sm fixed-top">
         <div class="container-fluid">
-            <ul class="navbar-nav">
-                <!--<a class="navbar-brand" href="#about">
-                    <img src="logo.png" alt="TS4NFDI" width="30" height="24">
-                </a> -->
-
+            <ul class="navbar-nav">              
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
@@ -34,12 +30,12 @@
         </div>
     </nav>
 
-    <div id="about" class="container-fluid section-container">
+    <div id="about" class="container-fluid section-container first-section">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-lg-3 col-md-6">
                 <img src="logo.png" class="rounded img-fluid logo" alt="TS4NFDI">
             </div>
-            <div class="col-sm-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="row">
                     <div class="col-sm-12">
                         <h3><b>What is TS4NFDI?</b></h3>
@@ -83,7 +79,7 @@
 
     <div id="publications" class="container-fluid section-container">
         <div class="row">
-            <div class="col-sm-10">
+            <div class="col">
                 <h3><b>Publications</b></h3>
                 <ul class="list-unstyled">
                     <li class="pub-item">
@@ -214,8 +210,17 @@
 
     </div>
 
-    <div id="contact" class="container-fluid section-container">
-                
+    <div id="contact" class="container-fluid section-container">                
+        <div class="row">
+            <div class="col-sm-10 contact-card">
+                <h3><b>Contact us</b></h3>
+                <br/><br/><br/>
+                Feel free to contact us at <a href="mailto:ts4nfdi@lists.nfdi.de">ts4nfdi@lists.nfdi.de</a>         
+                <br/><br/>
+                Help us to improve our Widgets by providing feedback at 
+                <a href="https://github.com/ts4nfdi/terminology-service-suite/issues" target="_blank"> TSS GitHub Repository</a>
+            </div>
+        </div>
     </div>
 
 </body>
