@@ -6,6 +6,10 @@ body {
     position: relative;  
 }
 
+/* #publications, #people, #contact{
+    display: none;
+} */
+
 p{
     text-align: justify;
 
@@ -29,6 +33,7 @@ a{
 .nav-item, .nav-link{
     color: white !important;
     font-size: 20px;
+    cursor: pointer;
 }
 .nav-item .active{
     color: white !important;
@@ -41,9 +46,10 @@ a{
 
 .section-container{    
     width: 100%; 
-    padding-bottom: 700px;   
     padding-top: 100px;
-    background-color: rgb(248, 248, 248);    
+    background-color: rgb(248, 248, 248); 
+    min-height: 100vh;   
+    display: none;
 }
 
 .logo{
