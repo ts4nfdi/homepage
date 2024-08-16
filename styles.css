@@ -6,10 +6,6 @@ body {
     position: relative;  
 }
 
-/* #publications, #people, #contact{
-    display: none;
-} */
-
 p{
     text-align: justify;
 
@@ -46,7 +42,7 @@ a{
 
 .section-container{    
     width: 100%; 
-    padding-top: 100px;
+    padding-top: 5%;
     background-color: rgb(248, 248, 248); 
     min-height: 100vh;   
     display: none;
@@ -94,13 +90,16 @@ a{
 }
 
 
-@media only screen and (min-width: 799px) and (max-width: 1200px) {
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
     .person-card{
         width: 100%;
     }
+    .section-container{
+        padding-top: 20%;
+    }
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 700px) {
     .first-section{
         padding-top: 300px;
     }
@@ -109,7 +108,10 @@ a{
     }    
     .nav-item{
         margin: 0px;
-    }    
+    } 
+    .section-container{
+        padding-top: 55%;
+    }   
 }
 
 
