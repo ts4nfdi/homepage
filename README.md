@@ -2,4 +2,4 @@
 
 This is the homepage for TS4NFDI. 
 
-Clone and open index.html in your browser.
+Hosted on: https://terminology.services.base4nfdi.de/
