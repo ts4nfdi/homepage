@@ -93,25 +93,26 @@ a{
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
     .person-card{
         width: 100%;
-    }
-    .section-container{
-        padding-top: 20%;
+    }    
+    .nav-item, .nav-link{      
+      font-size: 16px;      
     }
 }
 
 @media only screen and (max-width: 700px) {
     .first-section{
-        padding-top: 300px;
+        padding-top: 100px;
     }
     .logo{
         margin-bottom: 50px;
     }    
     .nav-item{
         margin: 0px;
-    } 
-    .section-container{
-        padding-top: 55%;
-    }   
+    }      
+    .nav-item, .nav-link{      
+      font-size: 14px;
+      margin-left: 5px;      
+    }
 }
 
 

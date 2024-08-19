@@ -1,4 +1,5 @@
-$(document).ready(function() {
+$(document).ready(function() {    
+    window.scrollTo(0,0);
     let cUrl = window.location.href;
     let urlAndSections = cUrl.split('#');
     if(urlAndSections.length !== 1){
@@ -15,9 +16,12 @@ $(document).ready(function() {
     }
     
     $('.nav-link').click(function() {
-        $('.nav-link').removeClass('active');
-        $(this).addClass('active');
         let section = $(this).attr('data-page');
+        if (section == "external-link"){
+            return true;
+        }        
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');        
         $('.section-container').hide();
         $('#' + section).show();
         let cUrl = window.location.href;        
