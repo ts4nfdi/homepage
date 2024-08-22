@@ -29,4 +29,16 @@ $(document).ready(function() {
         window.history.pushState(null, null, newUrl + '#' + section);
     });
 
+    $('.footer-link').click(function() {
+        let section = $(this).attr('data-page');        
+        $('.section-container').hide();
+        $('#' + section).show();
+        let cUrl = window.location.href;
+        let newUrl = cUrl.split('#')[0];
+        window.history.pushState(null, null, newUrl + '#' + section);
+        $('.nav-link').removeClass('active');
+        $('.nav-link[data-page="' + section + '"]').addClass('active');
+        window.scrollTo(0,0);
+    });
+
 });

@@ -55,12 +55,12 @@ a{
 }
 .person-card{
     background-color: white;
-    width: 50%;
+    width: 200px;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
 }
 .person-card-text{
-    font-size: 14px !important;
+    font-size: 12px !important;
     text-align: center;
 }
 .person-img{
@@ -112,18 +112,39 @@ a{
 .base-logo-img{
   margin-left: 20px;
 }
+.footer-link{
+  cursor: pointer;
+}
 
 
+@media only screen and (min-width: 1110px) and (max-width: 1500px) {
+  .section-container{
+    min-height: 1100px;
+  }
+}
+@media only screen and (min-width: 900px) and (max-width: 1110px) {
+  .section-container{
+    min-height: 1400px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .section-container{
+    min-height: 1200px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+  .section-container{
+    min-height: 1400px;
+    padding-bottom: 400px;
+  }
+}
 @media only screen and (min-width: 700px) and (max-width: 1500px) {
     .person-card{
         width: 100%;
     }    
     .nav-item, .nav-link{      
       font-size: 16px;      
-    }
-    .section-container{
-      /* min-height: 1500px; */
-    }
+    }    
 }
 
 @media only screen and (max-width: 700px) {
@@ -139,6 +160,21 @@ a{
     .nav-item, .nav-link{      
       font-size: 14px;
       margin-left: 5px;      
+    }
+    .person-card{
+      width: 100%;
+      margin-top: 10px;
+    }
+    .footers{
+      font-size: 12px;
+    }   
+    .footer-img-container{
+      display: inline-table;
+      padding-right: 10px;
+      width: 25%;      
+    }
+    .base-logo-img{
+      margin-left: 1px;
     }
 }
 
