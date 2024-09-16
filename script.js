@@ -1,4 +1,5 @@
-$(document).ready(function() {    
+$(document).ready(function() {     
+    // $('#eventsPageContainer').load('./events.html');
     window.scrollTo(0,0);
     let cUrl = window.location.href;
     let urlAndSections = cUrl.split('#');
